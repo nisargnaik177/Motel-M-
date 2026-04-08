@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Policies & Privacy Policy | Motel M Lewisburg – Lewisburg, WV</title>
+<meta name="description" content="Motel M Lewisburg hotel policies — check-in/out times, pet policy, cancellation, smoking, deposit and privacy policy. 2 Smithtown Rd, Lewisburg, WV.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #002855;
+  --gold: #EAAA00;
+  --gold-dark: #c48f00;
+  --cream: #FBF8F2;
+  --charcoal: #1a1a2e;
+  --mid: #555;
+  --light: #f4f4f4;
+  --white: #fff;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; color: var(--charcoal); background: var(--white); }
+a { text-decoration: none; color: inherit; }
+
+/* NAV */
+nav {
+  position: sticky; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(0,40,85,0.98);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5%; height: 64px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+}
+.nav-logo { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; color: var(--white); }
+.nav-logo span { color: var(--gold); }
+.nav-links { display: flex; align-items: center; gap: 20px; }
+.nav-links a { font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.85); transition: color 0.2s; }
+.nav-links a:hover { color: var(--gold); }
+.nav-cta {
+  background: var(--gold); color: var(--navy) !important;
+  padding: 9px 18px; border-radius: 4px; font-weight: 700 !important;
+}
+@media(max-width:768px){ .nav-links a:not(.nav-cta) { display:none; } }
+
+/* HERO BANNER */
+.page-hero {
+  background: linear-gradient(135deg, var(--navy) 0%, #003f7f 100%);
+  padding: 56px 5% 48px;
+  text-align: center;
+}
+.page-hero h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(36px, 5vw, 60px); font-weight: 800;
+  color: var(--white); margin-bottom: 10px; letter-spacing: -0.5px;
+}
+.page-hero p { color: rgba(255,255,255,0.75); font-size: 16px; }
+.breadcrumb {
+  display: flex; align-items: center; justify-content: center;
+  gap: 8px; margin-bottom: 16px;
+  font-size: 13px; color: rgba(255,255,255,0.5);
+}
+.breadcrumb a { color: var(--gold); }
+.breadcrumb span { color: rgba(255,255,255,0.3); }
+
+/* QUICK NAV */
+.quick-nav {
+  background: var(--cream); border-bottom: 1px solid #e8e3d8;
+  padding: 14px 5%; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+}
+.quick-nav a {
+  font-size: 13px; font-weight: 500; color: var(--navy);
+  background: var(--white); border: 1px solid #ddd;
+  padding: 6px 14px; border-radius: 20px; transition: all 0.2s;
+}
+.quick-nav a:hover { background: var(--navy); color: var(--white); border-color: var(--navy); }
+
+/* MAIN LAYOUT */
+.main-wrap {
+  max-width: 900px; margin: 0 auto; padding: 56px 5% 72px;
+}
+
+/* POLICY SECTIONS */
+.policy-block {
+  margin-bottom: 48px; scroll-margin-top: 80px;
+}
+.policy-header {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 20px; padding-bottom: 14px;
+  border-bottom: 2px solid var(--gold);
+}
+.policy-icon {
+  width: 44px; height: 44px; border-radius: 8px;
+  background: var(--navy); display: flex; align-items: center;
+  justify-content: center; font-size: 20px; flex-shrink: 0;
+}
+.policy-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 26px; font-weight: 800; color: var(--navy);
+}
+.policy-subtitle { font-size: 13px; color: var(--mid); margin-top: 2px; }
+
+/* POLICY ITEMS */
+.policy-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+.policy-card {
+  background: var(--cream); border-radius: 8px;
+  padding: 16px 18px; border-left: 3px solid var(--gold);
+}
+.policy-card-title {
+  font-size: 13px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.8px; color: var(--gold-dark); margin-bottom: 6px;
+}
+.policy-card-text { font-size: 14px; color: var(--charcoal); line-height: 1.65; }
+
+/* FULL WIDTH CARD */
+.policy-card-full {
+  background: var(--cream); border-radius: 8px;
+  padding: 20px 22px; border-left: 3px solid var(--gold);
+  margin-bottom: 12px;
+}
+.policy-card-full-title {
+  font-size: 13px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.8px; color: var(--gold-dark); margin-bottom: 10px;
+}
+
+/* POLICY LIST */
+.policy-list { list-style: none; }
+.policy-list li {
+  font-size: 14px; color: var(--charcoal); line-height: 1.65;
+  padding: 5px 0 5px 20px; position: relative;
+}
+.policy-list li::before {
+  content: '→'; position: absolute; left: 0;
+  color: var(--gold-dark); font-size: 12px; top: 7px;
+}
+
+/* FEE HIGHLIGHT */
+.fee-highlight {
+  display: inline-block; background: var(--navy); color: var(--white);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px; font-weight: 700;
+  padding: 4px 12px; border-radius: 4px; margin: 4px 0;
+}
+.fee-highlight.red { background: #c0392b; }
+.fee-highlight.green { background: #1a7a4a; }
+
+/* CHECK TIME DISPLAY */
+.time-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.time-box {
+  background: var(--navy); border-radius: 8px;
+  padding: 20px; text-align: center;
+}
+.time-label { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); margin-bottom: 8px; }
+.time-val { font-family: 'Barlow Condensed', sans-serif; font-size: 36px; font-weight: 800; color: var(--gold); }
+.time-note { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 4px; }
+
+/* IMPORTANT NOTICE */
+.notice {
+  background: #fff8e1; border: 1px solid var(--gold);
+  border-radius: 8px; padding: 16px 18px; margin-top: 14px;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.notice-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+.notice-text { font-size: 14px; color: #5a4000; line-height: 1.6; }
+.notice-text strong { color: var(--charcoal); }
+
+/* DIVIDER */
+.section-divider {
+  border: none; border-top: 1px solid #e8e3d8;
+  margin: 48px 0;
+}
+
+/* CONTACT BLOCK */
+.contact-block {
+  background: var(--navy); border-radius: 12px;
+  padding: 32px; text-align: center; margin-top: 48px;
+}
+.contact-block h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px; font-weight: 800; color: var(--white); margin-bottom: 8px;
+}
+.contact-block p { color: rgba(255,255,255,0.75); font-size: 15px; margin-bottom: 20px; }
+.contact-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.contact-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.1); color: var(--white);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px 20px; border-radius: 6px; font-size: 15px; font-weight: 500;
+  transition: all 0.2s;
+}
+.contact-pill:hover { background: var(--gold); color: var(--navy); border-color: var(--gold); }
+.contact-pill.gold { background: var(--gold); color: var(--navy); border-color: var(--gold); font-weight: 700; }
+
+/* FOOTER */
+footer {
+  background: var(--charcoal); color: rgba(255,255,255,0.65);
+  padding: 32px 5%; text-align: center;
+}
+.footer-logo { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+.footer-logo span { color: var(--gold); }
+footer p { font-size: 13px; margin-bottom: 4px; }
+footer a { color: var(--gold); }
+
+/* MOBILE STICKY */
+.sticky-bar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 99;
+  background: var(--navy); padding: 12px 16px;
+  display: none; gap: 10px;
+}
+.sticky-bar a {
+  flex: 1; text-align: center;
+  font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 700;
+  padding: 12px; border-radius: 4px;
+}
+.sb-book { background: var(--gold); color: var(--navy); }
+.sb-call { background: rgba(255,255,255,0.1); color: var(--white); border: 1px solid rgba(255,255,255,0.3); }
+@media(max-width:768px){
+  .sticky-bar { display: flex; }
+  body { padding-bottom: 72px; }
+  .time-grid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">Morgantown <span>Motel</span></a>
+  <div class="nav-links">
+    <a href="/#rooms">Rooms</a>
+    <a href="/#location">Location</a>
+    <a href="tel:3046456451">📞 (304) 645-6451</a>
+    <a href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=21004276e1fc45a580102783daa99e09" class="nav-cta">King $55+tax · Book Now</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="breadcrumb">
+    <a href="/">Home</a>
+    <span>›</span>
+    <span>Policies</span>
+  </div>
+  <h1>Hotel Policies & Privacy</h1>
+  <p>Everything you need to know before your stay at Motel M Lewisburg</p>
+</div>
+
+<!-- QUICK NAV -->
+<div class="quick-nav">
+  <a href="#checkin">Check-In/Out</a>
+  <a href="#deposit">Deposit</a>
+  <a href="#cancellation">Cancellation</a>
+  <a href="#pets">Pets</a>
+  <a href="#smoking">Smoking</a>
+  <a href="#payment">Payment</a>
+  <a href="#quiet">Quiet Hours</a>
+  <a href="#privacy">Privacy Policy</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main-wrap">
+
+  <!-- CHECK IN / OUT -->
+  <div class="policy-block" id="checkin">
+    <div class="policy-header">
+      <div class="policy-icon">🛎️</div>
+      <div>
+        <div class="policy-title">Check-In & Check-Out</div>
+        <div class="policy-subtitle">Arrival and departure times</div>
+      </div>
+    </div>
+    <div class="time-grid">
+      <div class="time-box">
+        <div class="time-label">Check-In</div>
+        <div class="time-val">3:00 PM</div>
+        <div class="time-note">Or later · Front desk available</div>
+      </div>
+      <div class="time-box">
+        <div class="time-label">Check-Out</div>
+        <div class="time-val">10:00 AM</div>
+        <div class="time-note">Late check-out on request</div>
+      </div>
+    </div>
+    <div class="notice" style="margin-top:14px;">
+      <div class="notice-icon">💡</div>
+      <div class="notice-text">
+        <strong>Early check-in or late check-out?</strong> Subject to availability — call us at <a href="tel:3046456451" style="color:#5a4000;font-weight:600;">(304) 645-6451</a> and we'll do our best to accommodate you. Late check-out without prior approval may incur additional charges.
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- DEPOSIT -->
+  <div class="policy-block" id="deposit">
+    <div class="policy-header">
+      <div class="policy-icon">💳</div>
+      <div>
+        <div class="policy-title">Security Deposit</div>
+        <div class="policy-subtitle">Refundable deposit required at check-in</div>
+      </div>
+    </div>
+    <div class="policy-grid">
+      <div class="policy-card">
+        <div class="policy-card-title">Deposit Amount</div>
+        <div class="policy-card-text">
+          <span class="fee-highlight">$100</span><br>
+          Fully refundable security deposit required at check-in. Returned after room inspection at check-out.
+        </div>
+      </div>
+      <div class="policy-card">
+        <div class="policy-card-title">Deposit Deductions</div>
+        <div class="policy-card-text">
+          Charges may be applied for:
+          <ul class="policy-list" style="margin-top:6px;">
+            <li>Room or property damage</li>
+            <li>Smoking violations ($200 fee)</li>
+            <li>Missing items</li>
+            <li>Excessive cleaning required</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- CANCELLATION -->
+  <div class="policy-block" id="cancellation">
+    <div class="policy-header">
+      <div class="policy-icon">❌</div>
+      <div>
+        <div class="policy-title">Cancellation Policy</div>
+        <div class="policy-subtitle">Flexible cancellation for direct bookings</div>
+      </div>
+    </div>
+    <div class="policy-grid">
+      <div class="policy-card">
+        <div class="policy-card-title">✅ Free Cancellation</div>
+        <div class="policy-card-text">
+          Cancel up to <strong>24 hours before check-in</strong> at no charge. No questions asked.
+        </div>
+      </div>
+      <div class="policy-card">
+        <div class="policy-card-title">⚠️ Late Cancellation</div>
+        <div class="policy-card-text">
+          Cancellations within 24 hours of check-in or <strong>no-shows</strong> may be charged for one night's stay.
+        </div>
+      </div>
+    </div>
+    <div class="notice">
+      <div class="notice-icon">💡</div>
+      <div class="notice-text">
+        <strong>Booked through Booking.com or Expedia?</strong> Their cancellation policies may differ. For the most flexible cancellation terms, always book direct at <a href="/" style="color:#5a4000;font-weight:600;">motellewisburg.com</a> or call us at <a href="tel:3046456451" style="color:#5a4000;font-weight:600;">(304) 645-6451</a>.
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- PETS -->
+  <div class="policy-block" id="pets">
+    <div class="policy-header">
+      <div class="policy-icon">🐾</div>
+      <div>
+        <div class="policy-title">Pet Policy</div>
+        <div class="policy-subtitle">Pets welcome with a small fee</div>
+      </div>
+    </div>
+    <div class="policy-grid">
+      <div class="policy-card">
+        <div class="policy-card-title">Pet Fee</div>
+        <div class="policy-card-text">
+          <span class="fee-highlight green">$20</span> per stay<br>
+          Maximum <strong>2 pets</strong> per room allowed.
+        </div>
+      </div>
+      <div class="policy-card">
+        <div class="policy-card-title">Pet Rules</div>
+        <ul class="policy-list">
+          <li>Pets must not be left unattended in rooms</li>
+          <li>Guests responsible for any pet damage</li>
+          <li>Please clean up after your pet on property</li>
+          <li>Notify front desk of pets at check-in</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- SMOKING -->
+  <div class="policy-block" id="smoking">
+    <div class="policy-header">
+      <div class="policy-icon">🚭</div>
+      <div>
+        <div class="policy-title">Smoking Policy</div>
+        <div class="policy-subtitle">100% non-smoking property</div>
+      </div>
+    </div>
+    <div class="policy-card-full">
+      <div class="policy-card-full-title">Non-Smoking Property</div>
+      <div class="policy-card-text" style="font-size:15px;">
+        Motel M Lewisburg is a <strong>non-smoking property</strong>. Smoking is strictly prohibited inside all guest rooms and indoor areas.
+      </div>
+    </div>
+    <div class="notice" style="border-color:#c0392b;background:#fff0ee;">
+      <div class="notice-icon">⚠️</div>
+      <div class="notice-text" style="color:#7a1a0a;">
+        <strong>Smoking violation fee: <span style="font-size:16px;">$200</span></strong> — Guests found smoking inside rooms will be charged a $200 deep-cleaning fee, which will be deducted from the security deposit or charged to the card on file.
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- ROOM POLICY -->
+  <div class="policy-block" id="room">
+    <div class="policy-header">
+      <div class="policy-icon">🛏️</div>
+      <div>
+        <div class="policy-title">Room Policy</div>
+        <div class="policy-subtitle">General guest room rules</div>
+      </div>
+    </div>
+    <div class="policy-grid">
+      <div class="policy-card">
+        <div class="policy-card-title">ID & Registration</div>
+        <ul class="policy-list">
+          <li>Valid government-issued photo ID required at check-in</li>
+          <li>Only registered guests permitted in rooms</li>
+          <li>Maximum occupancy per room must not be exceeded</li>
+        </ul>
+      </div>
+      <div class="policy-card">
+        <div class="policy-card-title">Conduct</div>
+        <ul class="policy-list">
+          <li>No parties or events in guest rooms</li>
+          <li>Quiet hours 10:00 PM – 7:00 AM</li>
+          <li>Respectful behavior toward staff and guests</li>
+          <li>Management reserves right to refuse service</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- PAYMENT -->
+  <div class="policy-block" id="payment">
+    <div class="policy-header">
+      <div class="policy-icon">💵</div>
+      <div>
+        <div class="policy-title">Payment Policy</div>
+        <div class="policy-subtitle">Accepted payment methods</div>
+      </div>
+    </div>
+    <div class="policy-grid">
+      <div class="policy-card">
+        <div class="policy-card-title">Accepted Methods</div>
+        <ul class="policy-list">
+          <li>Visa, Mastercard, American Express</li>
+          <li>Discover, Diners Club</li>
+          <li>Debit cards</li>
+          <li>Cash</li>
+        </ul>
+      </div>
+      <div class="policy-card">
+        <div class="policy-card-title">Payment Timing</div>
+        <div class="policy-card-text">
+          Payment may be required at time of booking or at check-in, depending on booking method and room type. The $100 security deposit is collected separately at check-in.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- QUIET HOURS -->
+  <div class="policy-block" id="quiet">
+    <div class="policy-header">
+      <div class="policy-icon">🔇</div>
+      <div>
+        <div class="policy-title">Quiet Hours</div>
+        <div class="policy-subtitle">Respect for all guests</div>
+      </div>
+    </div>
+    <div class="time-grid">
+      <div class="time-box">
+        <div class="time-label">Quiet Hours Begin</div>
+        <div class="time-val">10:00 PM</div>
+        <div class="time-note">Every night</div>
+      </div>
+      <div class="time-box">
+        <div class="time-label">Quiet Hours End</div>
+        <div class="time-val">7:00 AM</div>
+        <div class="time-note">Every morning</div>
+      </div>
+    </div>
+    <div class="notice" style="margin-top:14px;">
+      <div class="notice-icon">🔇</div>
+      <div class="notice-text">
+        All guests are expected to keep noise levels low during quiet hours. Excessive noise complaints may result in removal from the property without refund.
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- LOST ITEMS & LIABILITY -->
+  <div class="policy-block" id="liability">
+    <div class="policy-header">
+      <div class="policy-icon">⚠️</div>
+      <div>
+        <div class="policy-title">Lost Items & Liability</div>
+        <div class="policy-subtitle">Property responsibility</div>
+      </div>
+    </div>
+    <div class="policy-grid">
+      <div class="policy-card">
+        <div class="policy-card-title">🎒 Lost or Stolen Items</div>
+        <div class="policy-card-text">
+          Motel M Lewisburg is not responsible for lost, stolen, or unattended personal belongings. Please secure your valuables and do not leave items unattended.
+        </div>
+      </div>
+      <div class="policy-card">
+        <div class="policy-card-title">👮 Right to Refuse Service</div>
+        <div class="policy-card-text">
+          Management reserves the right to refuse service to anyone for safety concerns, policy violations, or illegal activities. Guests asked to leave for violations will not receive a refund.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="section-divider">
+
+  <!-- PRIVACY POLICY -->
+  <div class="policy-block" id="privacy">
+    <div class="policy-header">
+      <div class="policy-icon">🔒</div>
+      <div>
+        <div class="policy-title">Privacy Policy</div>
+        <div class="policy-subtitle">How we handle your personal information</div>
+      </div>
+    </div>
+
+    <div class="policy-card-full">
+      <div class="policy-card-full-title">Information We Collect</div>
+      <ul class="policy-list">
+        <li>Name, phone number, and email address</li>
+        <li>Payment details (processed securely through third-party providers)</li>
+        <li>Booking details and stay preferences</li>
+        <li>Government-issued ID details (required at check-in by law)</li>
+      </ul>
+    </div>
+
+    <div class="policy-card-full">
+      <div class="policy-card-full-title">How We Use Your Information</div>
+      <ul class="policy-list">
+        <li>To confirm and manage your reservation</li>
+        <li>To communicate booking updates and important stay information</li>
+        <li>To improve guest experience</li>
+        <li>For legal, security, and compliance purposes</li>
+      </ul>
+    </div>
+
+    <div class="policy-card-full">
+      <div class="policy-card-full-title">Data Protection</div>
+      <div class="policy-card-text" style="font-size:15px;line-height:1.7;">
+        We do not sell, trade, or share your personal data with third parties except as required for booking processing, payment handling, or as required by law. Your information is stored securely and accessed only by authorized staff members.
+      </div>
+    </div>
+
+    <div class="notice">
+      <div class="notice-icon">📅</div>
+      <div class="notice-text">
+        <strong>Last updated: April 2026.</strong> This privacy policy applies to motellewisburg.com and all direct bookings made with Motel M Lewisburg. For questions, contact us at <a href="tel:3046456451" style="color:#5a4000;font-weight:600;">(304) 645-6451</a>.
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT BLOCK -->
+  <div class="contact-block">
+    <h3>Questions About Our Policies?</h3>
+    <p>Our team is happy to clarify anything before your stay. Reach us directly.</p>
+    <div class="contact-row">
+      <a href="tel:3046456451" class="contact-pill gold">📞 (304) 645-6451</a>
+      <a href="https://wa.me/13046456451" class="contact-pill">💬 WhatsApp Us</a>
+      <a href="/" class="contact-pill">🏠 Back to Homepage</a>
+      <a href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=21004276e1fc45a580102783daa99e09" class="contact-pill">✅ Book Direct — King $55+tax</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Morgantown <span>Motel</span></div>
+  <p>187 W Fair St, Lewisburg, WV 24901</p>
+  <p><a href="tel:3046456451">(304) 645-6451</a> · <a href="/">motellewisburg.com</a></p>
+  <p style="margin-top:12px;">© 2026 Motel M Lewisburg. All rights reserved.</p>
+</footer>
+
+<!-- MOBILE STICKY BAR -->
+<div class="sticky-bar">
+  <a href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=21004276e1fc45a580102783daa99e09" class="sb-book">King $55+tax · Book Direct</a>
+  <a href="tel:3046456451" class="sb-call">📞 Call</a>
+</div>
+
+</body>
+</html>
