@@ -14,7 +14,6 @@
   "name": "Motel M Lewisburg",
   "url": "https://motellewisburg.com",
   "telephone": "+13046456451",
-  "image": "https://motellewisburg.com/",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "187 W Fair St",
@@ -29,30 +28,11 @@
     "ratingValue": "4.1",
     "reviewCount": "389"
   },
-  "amenityFeature": [
-    {"@type": "LocationFeatureSpecification","name": "Free WiFi","value": true},
-    {"@type": "LocationFeatureSpecification","name": "Free Parking","value": true},
-    {"@type": "LocationFeatureSpecification","name": "Air Conditioning","value": true},
-    {"@type": "LocationFeatureSpecification","name": "Flat-screen TV","value": true}
-  ],
   "checkinTime": "15:00",
   "checkoutTime": "10:00"
 }</script>
 <style>
-/* ─── BRIGHTER COLOR PALETTE ─── */
-:root{
-  --navy:#0d1b3e;         /* deeper, richer navy */
-  --gold:#ffc107;         /* vivid amber-yellow — like the screenshot */
-  --gold-dark:#e6a800;    /* slightly deeper for hover states */
-  --gold-text:#ffb300;    /* warm gold for text accents */
-  --cream:#faf8f0;
-  --charcoal:#141424;
-  --mid:#5a5a6a;
-  --light:#eef0f8;
-  --white:#fff;
-  --red:#d32f2f;
-  --green:#1a6b40;
-}
+:root{--navy:#0d1b3e;--gold:#ffc107;--gold-dark:#e6a800;--cream:#faf8f0;--charcoal:#141424;--mid:#5a5a6a;--light:#eef0f8;--white:#fff}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;color:var(--charcoal);background:var(--white);font-size:16px;line-height:1.65}
@@ -66,36 +46,32 @@ nav{position:sticky;top:0;z-index:100;background:rgba(13,27,62,0.98);backdrop-fi
 .nav-links a{font-size:14px;font-weight:500;color:rgba(255,255,255,0.82);transition:color .2s}
 .nav-links a:hover{color:var(--gold)}
 .nav-phone{color:rgba(255,255,255,0.65)!important;font-size:13px!important}
-.nav-cta{background:var(--gold)!important;color:var(--navy)!important;padding:9px 18px;border-radius:4px;font-weight:800!important;font-size:13px!important;transition:background .2s!important;letter-spacing:.3px}
+.nav-cta{background:var(--gold)!important;color:var(--navy)!important;padding:9px 18px;border-radius:4px;font-weight:800!important;font-size:13px!important}
 .nav-cta:hover{background:var(--gold-dark)!important}
 @media(max-width:768px){.nav-links a:not(.nav-cta):not(.nav-phone){display:none}.nav-links{gap:10px}}
 
-.urgency-bar{background:var(--gold);color:var(--navy);text-align:center;padding:10px 20px;font-size:14px;font-weight:700;letter-spacing:.2px}
-.urgency-bar span{color:var(--navy);text-decoration:underline}
+.urgency-bar{background:var(--gold);color:var(--navy);text-align:center;padding:10px 20px;font-size:14px;font-weight:700}
+.urgency-bar span{text-decoration:underline}
 
 .hero{position:relative;min-height:92vh;display:flex;align-items:center;padding:80px 5% 60px;overflow:hidden}
 .hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(120deg,rgba(8,18,48,0.93) 0%,rgba(13,27,62,0.80) 55%,rgba(0,0,0,0.50) 100%);z-index:1}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(120deg,rgba(8,18,48,0.93) 0%,rgba(13,27,62,0.80) 55%,rgba(0,0,0,0.45) 100%);z-index:1}
 .hero-inner{position:relative;z-index:2;max-width:680px}
 .hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:var(--navy);font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:5px 14px;border-radius:3px;margin-bottom:22px}
-.hero-stars{color:var(--navy);font-size:11px}
 h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(48px,7vw,88px);font-weight:800;color:var(--white);line-height:.95;letter-spacing:-1px;margin-bottom:20px}
-h1 em{color:var(--gold);font-style:normal;-webkit-text-stroke:0px;text-shadow:0 0 40px rgba(255,193,7,0.3)}
+h1 em{color:var(--gold);font-style:normal}
 .hero-sub{font-size:18px;color:rgba(255,255,255,0.90);line-height:1.6;margin-bottom:30px;max-width:520px}
 .hero-sub strong{color:var(--gold)}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:36px}
-
-/* ─── BUTTONS — brighter, bolder ─── */
-.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--navy);font-family:'Barlow Condensed',sans-serif;font-size:21px;font-weight:800;letter-spacing:.5px;padding:15px 30px;border-radius:5px;transition:all .2s;border:2px solid var(--gold);box-shadow:0 4px 20px rgba(255,193,7,0.35)}
-.btn-primary:hover{background:var(--gold-dark);border-color:var(--gold-dark);transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,193,7,0.45)}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--navy);font-family:'Barlow Condensed',sans-serif;font-size:21px;font-weight:800;padding:15px 30px;border-radius:5px;transition:all .2s;border:2px solid var(--gold);box-shadow:0 4px 20px rgba(255,193,7,0.35)}
+.btn-primary:hover{background:var(--gold-dark);border-color:var(--gold-dark);transform:translateY(-2px)}
 .btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;padding:14px 22px;border-radius:5px;border:2px solid rgba(255,255,255,0.55);transition:all .2s}
 .btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,0.10)}
-.btn-whatsapp{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:700;padding:14px 22px;border-radius:5px;transition:all .2s;border:2px solid #25D366}
-.btn-whatsapp:hover{background:#1db954;transform:translateY(-2px)}
+.btn-whatsapp{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:var(--white);font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:700;padding:14px 22px;border-radius:5px;border:2px solid #25D366;transition:all .2s}
 .hero-trust{display:flex;flex-wrap:wrap;gap:18px}
 .trust-chip{display:flex;align-items:center;gap:7px;color:rgba(255,255,255,0.88);font-size:14px;font-weight:500}
-.trust-chip::before{content:'✓';color:var(--gold);font-weight:800;font-size:14px}
+.trust-chip::before{content:'✓';color:var(--gold);font-weight:800}
 
 .banner{background:var(--navy);padding:28px 5%;display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px;border-top:3px solid var(--gold)}
 .banner-left h3{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:800;color:var(--white);margin-bottom:4px}
@@ -123,9 +99,8 @@ h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(34px,5vw,54px);font
 .review-text{font-size:14px;line-height:1.7;color:var(--charcoal);font-style:italic;margin-bottom:14px}
 .reviewer{font-size:13px;font-weight:600;color:var(--navy)}
 .reviewer span{color:var(--mid);font-weight:400}
-.rating-summary{display:flex;align-items:center;gap:20px;margin-top:36px;padding:20px 24px;background:var(--white);border-radius:10px;border-left:4px solid var(--gold);box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.rating-summary{display:flex;align-items:center;gap:20px;margin-top:36px;padding:20px 24px;background:var(--white);border-radius:10px;border-left:4px solid var(--gold)}
 .rating-big{font-family:'Barlow Condensed',sans-serif;font-size:56px;font-weight:800;color:var(--navy);line-height:1}
-.rating-info p{font-size:14px;color:var(--mid);margin-top:2px}
 
 .rooms-wrap{background:var(--light)}
 .rooms-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:28px;margin-top:40px}
@@ -173,8 +148,7 @@ h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(34px,5vw,54px);font
 .benefit-text{font-size:13px;color:var(--mid);line-height:1.6}
 
 .offers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:40px}
-.offer-card{border:2px solid var(--navy);border-radius:10px;overflow:hidden;transition:transform .2s,box-shadow .2s}
-.offer-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.12)}
+.offer-card{border:2px solid var(--navy);border-radius:10px;overflow:hidden}
 .offer-hdr{background:var(--navy);padding:14px 18px}
 .offer-tag{display:inline-block;background:var(--gold);color:var(--navy);font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:2px;margin-bottom:6px}
 .offer-name{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white)}
@@ -205,15 +179,15 @@ h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(34px,5vw,54px);font
 .compare-save{font-size:11px;color:var(--gold);font-weight:700;margin-top:2px}
 .final-ctas{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
 
-.photo-showcase{padding:56px 5%;background:var(--charcoal)}
+.photo-showcase{padding:56px 5%;background:var(--charcoal,#141424)}
 .photo-showcase h2{color:var(--white);margin-bottom:8px}
 .photo-showcase .section-label{color:var(--gold)}
 .photo-row{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:32px}
-.photo-row img{width:100%;height:180px;object-fit:cover;border-radius:6px;cursor:pointer;transition:transform .2s;filter:brightness(.90)}
+.photo-row img{width:100%;height:180px;object-fit:cover;border-radius:6px;cursor:pointer;transition:transform .2s;filter:brightness(.92)}
 .photo-row img:hover{transform:scale(1.04);filter:brightness(1.05)}
 @media(max-width:768px){.photo-row{grid-template-columns:repeat(2,1fr)}}
 
-footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 24px}
+footer{background:#141424;color:rgba(255,255,255,0.62);padding:44px 5% 24px}
 .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px;margin-bottom:32px}
 .footer-logo{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--white);margin-bottom:8px}
 .footer-logo span{color:var(--gold)}
@@ -231,7 +205,6 @@ footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 2
 .sb-book{background:var(--gold);color:var(--navy)}
 .sb-call{background:rgba(255,255,255,0.08);color:var(--white);border:1px solid rgba(255,255,255,0.25)}
 @media(max-width:768px){.sticky-bar{display:flex};body{padding-bottom:70px}}
-
 .wa-float{position:fixed;bottom:90px;right:20px;z-index:98;background:#25D366;color:var(--white);width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 4px 16px rgba(0,0,0,0.25);transition:transform .2s;text-decoration:none}
 .wa-float:hover{transform:scale(1.12)}
 @media(min-width:769px){.wa-float{bottom:24px}}
@@ -254,24 +227,24 @@ footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 2
     <a href="#rooms">Rooms</a>
     <a href="#location">Location</a>
     <a href="#offers">Offers</a>
-    <a href="/policies.html">Policies</a>
-    <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=3ac4a879db094542ad034bb0efe1ef78&lang=en&Curr=1&Operation=date&txtcheckindate=04/08/2026&txtcheckoutdate=04/09/2026&txtadult=2&txtChildren=0&Source=Google" class="nav-cta">King $55 · Book Direct</a>
+    <a href="/motel-m-lewisburg-policies.html">Policies</a>
+    <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=240ab04fc93849d295484c36996c5277&lang=en&Curr=1" class="nav-cta">King $55 · Book Direct</a>
   </div>
 </nav>
 
 <div class="urgency-bar">
-  📍 Lewisburg, WV · King from <span>$55/night + tax</span> · Double from <span>$60/night + tax</span> · Free Parking · Free WiFi · Book Direct, Skip OTA Fees
+  📍 Lewisburg, WV · King from <span>$55/night + tax</span> · Double from <span>$60/night + tax</span> · Free Parking · Free WiFi · Book Direct
 </div>
 
 <div class="hero">
-  <div class="hero-bg"><img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1400&q=80" alt="King room at Motel M Lewisburg WV — clean and comfortable"></div>
+  <div class="hero-bg"><img src="images/exterior-main.jpg" alt="Motel M Lewisburg WV exterior — affordable motel near downtown"></div>
   <div class="hero-overlay"></div>
   <div class="hero-inner">
-    <div class="hero-badge"><span class="hero-stars">★★★★</span> 4.1 · 389 Google Reviews · Lewisburg, WV</div>
+    <div class="hero-badge">★★★★ 4.1 · 389 Google Reviews · Lewisburg, WV</div>
     <h1>Clean Rooms.<br><em>Honest Prices.</em><br>Lewisburg.</h1>
     <p class="hero-sub">The most affordable motel in Lewisburg, West Virginia — steps from historic downtown. King rooms from <strong>$55/night + tax.</strong> Double from $60. Free parking, free WiFi, no hidden fees.</p>
     <div class="hero-ctas">
-      <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=3ac4a879db094542ad034bb0efe1ef78&lang=en&Curr=1&Operation=date&txtcheckindate=04/08/2026&txtcheckoutdate=04/09/2026&txtadult=2&txtChildren=0&Source=Google" class="btn-primary">✓ Check Availability &amp; Book Direct</a>
+      <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=240ab04fc93849d295484c36996c5277&lang=en&Curr=1" class="btn-primary">✓ Check Availability &amp; Book Direct</a>
       <a href="tel:3046456451" class="btn-outline">📞 Call to Reserve</a>
     </div>
     <div class="hero-trust">
@@ -297,7 +270,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 2
     </div>
   </div>
   <div>
-    <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=3ac4a879db094542ad034bb0efe1ef78&lang=en&Curr=1&Operation=date&txtcheckindate=04/08/2026&txtcheckoutdate=04/09/2026&txtadult=2&txtChildren=0&Source=Google" class="btn-primary" style="white-space:nowrap;font-size:18px">Book Direct Now →</a>
+    <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=240ab04fc93849d295484c36996c5277&lang=en&Curr=1" class="btn-primary" style="white-space:nowrap;font-size:18px">Book Direct Now →</a>
   </div>
 </div>
 
@@ -306,11 +279,11 @@ footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 2
   <h2>See Motel M Lewisburg.</h2>
   <p class="section-sub">Real photos of our actual rooms — no stock images, no filters. What you see is what you get.</p>
   <div class="photo-grid">
-    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80" alt="Double room Motel M Lewisburg WV — clean white bedding flat-screen TV">
-    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80" alt="King room blue accent wall Motel M Lewisburg">
-    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Motel M Lewisburg exterior sign West Virginia">
-    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80" alt="Double room warm lighting Motel M Lewisburg">
-    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80" alt="Motel M Lewisburg exterior garden and parking">
+    <img src="images/exterior-main.jpg" alt="Motel M Lewisburg exterior — free parking">
+    <img src="images/king-room.jpg" alt="King room blue accent wall Motel M Lewisburg">
+    <img src="images/exterior-garden.jpg" alt="Motel M Lewisburg garden exterior">
+    <img src="images/double-room.jpg" alt="Double room Motel M Lewisburg WV">
+    <img src="images/double-headboard.jpg" alt="Double room Motel M Lewisburg">
   </div>
 </section>
 
@@ -353,7 +326,7 @@ footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 2
 
     <div class="room-card">
       <div class="room-photos">
-        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80" alt="King room Motel M Lewisburg WV — king bed blue accent wall hardwood floors">
+        <img src="images/king-room.jpg" alt="King room Motel M Lewisburg WV — king bed blue accent wall">
         <div class="room-badge">Most Popular</div>
       </div>
       <div class="room-body">
@@ -361,26 +334,21 @@ footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 2
         <div class="room-name">King Room</div>
         <p class="room-desc">A spacious king bed with distinctive headboard design, hardwood-style floors, flat-screen TV, and your own AC unit. Clean, quiet, and comfortable — exactly what you need for a great night in Lewisburg.</p>
         <div class="room-amenities">
-          <span class="amenity">King Bed</span>
-          <span class="amenity">Free WiFi</span>
-          <span class="amenity">Flat-Screen TV</span>
-          <span class="amenity">A/C &amp; Heat</span>
-          <span class="amenity">Free Parking</span>
-          <span class="amenity">Sitting Chair</span>
+          <span class="amenity">King Bed</span><span class="amenity">Free WiFi</span><span class="amenity">Flat-Screen TV</span><span class="amenity">A/C &amp; Heat</span><span class="amenity">Free Parking</span><span class="amenity">Sitting Chair</span>
         </div>
         <div class="room-footer">
           <div class="price-wrap">
             <div class="ota-price">~$70+ on Booking.com + fees</div>
             <div class="price">$55 <span>/ night + tax (direct)</span></div>
           </div>
-          <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=3ac4a879db094542ad034bb0efe1ef78&lang=en&Curr=1&Operation=date&txtcheckindate=04/08/2026&txtcheckoutdate=04/09/2026&txtadult=2&txtChildren=0&Source=Google" class="btn-book">Book Now</a>
+          <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=240ab04fc93849d295484c36996c5277&lang=en&Curr=1" class="btn-book">Book Now</a>
         </div>
       </div>
     </div>
 
     <div class="room-card">
       <div class="room-photos">
-        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&q=80" alt="Double room two beds Motel M Lewisburg WV — flat-screen TV hardwood floors">
+        <img src="images/double-room.jpg" alt="Double room two beds Motel M Lewisburg WV">
         <div class="room-badge" style="background:var(--navy);color:var(--gold)">Best Value</div>
       </div>
       <div class="room-body">
@@ -388,19 +356,14 @@ footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 2
         <div class="room-name">Double Room</div>
         <p class="room-desc">Two full beds, more floor space, wall-mounted flat-screen TV, and all the essentials done right. Great for families visiting Lewisburg, two friends splitting the cost, or anyone who wants extra room.</p>
         <div class="room-amenities">
-          <span class="amenity">2 Full Beds</span>
-          <span class="amenity">Free WiFi</span>
-          <span class="amenity">Flat-Screen TV</span>
-          <span class="amenity">A/C &amp; Heat</span>
-          <span class="amenity">Free Parking</span>
-          <span class="amenity">Luggage Rack</span>
+          <span class="amenity">2 Full Beds</span><span class="amenity">Free WiFi</span><span class="amenity">Flat-Screen TV</span><span class="amenity">A/C &amp; Heat</span><span class="amenity">Free Parking</span><span class="amenity">Luggage Rack</span>
         </div>
         <div class="room-footer">
           <div class="price-wrap">
             <div class="ota-price">~$80+ on Expedia + fees</div>
             <div class="price">$60 <span>/ night + tax (direct)</span></div>
           </div>
-          <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=3ac4a879db094542ad034bb0efe1ef78&lang=en&Curr=1&Operation=date&txtcheckindate=04/08/2026&txtcheckoutdate=04/09/2026&txtadult=2&txtChildren=0&Source=Google" class="btn-book">Book Now</a>
+          <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=240ab04fc93849d295484c36996c5277&lang=en&Curr=1" class="btn-book">Book Now</a>
         </div>
       </div>
     </div>
@@ -412,21 +375,21 @@ footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 2
   <div class="section-label">Photo Gallery</div>
   <h2 style="color:var(--white)">Inside Our Rooms.</h2>
   <div class="photo-row">
-    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&q=75" alt="King room Motel M Lewisburg blue accent">
-    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=75" alt="Double room Motel M Lewisburg">
-    <img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=600&q=75" alt="Room sunlit Motel M Lewisburg">
-    <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&q=75" alt="Room flat screen TV Motel M Lewisburg">
-    <img src="https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=600&q=75" alt="Wide room view Motel M Lewisburg">
-    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=75" alt="Motel M Lewisburg exterior">
-    <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=75" alt="Bathroom Motel M Lewisburg">
-    <img src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=600&q=75" alt="Parking Motel M Lewisburg free parking">
+    <img src="images/king-room.jpg"        alt="King room blue wall Motel M Lewisburg">
+    <img src="images/double-tv.jpg"        alt="Double room with TV Motel M Lewisburg">
+    <img src="images/double-sunlit.jpg"    alt="Double room sunlit Motel M Lewisburg">
+    <img src="images/double-headboard.jpg" alt="Double room headboard Motel M Lewisburg">
+    <img src="images/double-warm.jpg"      alt="Double room warm Motel M Lewisburg">
+    <img src="images/exterior-main.jpg"    alt="Motel M Lewisburg exterior sign">
+    <img src="images/king-dark.jpg"        alt="King room Motel M Lewisburg">
+    <img src="images/exterior-garden.jpg"  alt="Motel M Lewisburg garden">
   </div>
 </div>
 
 <section class="location-wrap" id="location">
   <div class="section-label">Prime Location</div>
   <h2>Right in the Heart of Lewisburg.</h2>
-  <p class="section-sub">187 W Fair St puts you steps from historic downtown Lewisburg — one of America's most charming small towns — with everything you need within easy reach.</p>
+  <p class="section-sub">187 W Fair St puts you steps from historic downtown Lewisburg with everything you need within easy reach.</p>
   <div class="location-grid">
     <div>
       <ul class="dist-list">
@@ -441,9 +404,9 @@ footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 2
       </ul>
       <div class="event-box">
         <h4>🎪 Visiting for an Event?</h4>
-        <p>Whether it's the State Fair of West Virginia, a Greenbrier Valley Theatre show, or a weekend getaway — Motel M Lewisburg puts you in the best possible location at the best possible price. Book early before we fill up.</p>
+        <p>Whether it's the State Fair of West Virginia, a Greenbrier Valley Theatre show, or a weekend getaway — Motel M Lewisburg puts you in the best possible location at the best possible price.</p>
         <br>
-        <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=3ac4a879db094542ad034bb0efe1ef78&lang=en&Curr=1&Operation=date&txtcheckindate=04/08/2026&txtcheckoutdate=04/09/2026&txtadult=2&txtChildren=0&Source=Google" class="btn-primary" style="font-size:17px;padding:12px 22px">Reserve Your Room →</a>
+        <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=240ab04fc93849d295484c36996c5277&lang=en&Curr=1" class="btn-primary" style="font-size:17px;padding:12px 22px">Reserve Your Room →</a>
       </div>
     </div>
     <div>
@@ -461,38 +424,14 @@ footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 2
 <section class="direct-wrap" id="why-direct">
   <div class="section-label">Skip the Middleman</div>
   <h2>Why Book Direct?</h2>
-  <p class="section-sub">Booking.com and Expedia charge service fees that end up costing you more. When you book directly with us, you get the real price — with nothing added on top.</p>
+  <p class="section-sub">Booking.com and Expedia charge service fees. When you book directly with us, you get the real price — with nothing added on top.</p>
   <div class="benefits-grid">
-    <div class="benefit">
-      <div class="benefit-icon">💰</div>
-      <div class="benefit-title">Lowest Rate</div>
-      <p class="benefit-text">Our direct rate is always cheaper than OTAs. No service fees, no booking fees, no surprises.</p>
-    </div>
-    <div class="benefit">
-      <div class="benefit-icon">🤝</div>
-      <div class="benefit-title">Real Person</div>
-      <p class="benefit-text">Call (304) 645-6451 and speak to our team directly. We'll answer every question and confirm your room.</p>
-    </div>
-    <div class="benefit">
-      <div class="benefit-icon">🔓</div>
-      <div class="benefit-title">Flexible</div>
-      <p class="benefit-text">Plans change. Book direct and we'll work with you. Call us — we're much easier than an OTA chatbot.</p>
-    </div>
-    <div class="benefit">
-      <div class="benefit-icon">🅿️</div>
-      <div class="benefit-title">Free Parking</div>
-      <p class="benefit-text">Free on-site parking for all guests, every stay. No parking fees, no garages. Park right outside your door.</p>
-    </div>
-    <div class="benefit">
-      <div class="benefit-icon">💬</div>
-      <div class="benefit-title">WhatsApp Support</div>
-      <p class="benefit-text">Message us on WhatsApp anytime. Faster than any OTA customer service line, guaranteed.</p>
-    </div>
-    <div class="benefit">
-      <div class="benefit-icon">⭐</div>
-      <div class="benefit-title">Best Rate Guarantee</div>
-      <p class="benefit-text">Found a lower rate online? Show us and we'll match it. Booking direct will always be worth it.</p>
-    </div>
+    <div class="benefit"><div class="benefit-icon">💰</div><div class="benefit-title">Lowest Rate</div><p class="benefit-text">Our direct rate is always cheaper than OTAs. No service fees, no booking fees, no surprises.</p></div>
+    <div class="benefit"><div class="benefit-icon">🤝</div><div class="benefit-title">Real Person</div><p class="benefit-text">Call (304) 645-6451 and speak to our team directly. We'll answer every question and confirm your room.</p></div>
+    <div class="benefit"><div class="benefit-icon">🔓</div><div class="benefit-title">Flexible</div><p class="benefit-text">Plans change. Book direct and we'll work with you. Call us — we're much easier than an OTA chatbot.</p></div>
+    <div class="benefit"><div class="benefit-icon">🅿️</div><div class="benefit-title">Free Parking</div><p class="benefit-text">Free on-site parking for all guests, every stay. Park right outside your room door.</p></div>
+    <div class="benefit"><div class="benefit-icon">💬</div><div class="benefit-title">WhatsApp Support</div><p class="benefit-text">Message us on WhatsApp anytime. Faster than any OTA customer service line, guaranteed.</p></div>
+    <div class="benefit"><div class="benefit-icon">⭐</div><div class="benefit-title">Best Rate Guarantee</div><p class="benefit-text">Found a lower rate online? Show us and we'll match it. Booking direct will always be worth it.</p></div>
   </div>
 </section>
 
@@ -501,36 +440,9 @@ footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 2
   <h2>Offers Only for Direct Bookings.</h2>
   <p class="section-sub">These rates and perks are not available on Booking.com or Expedia. Call, WhatsApp, or book on our website to claim them.</p>
   <div class="offers-grid">
-    <div class="offer-card">
-      <div class="offer-hdr">
-        <div class="offer-tag">Best Seller</div>
-        <div class="offer-name">Direct Booking Rate</div>
-      </div>
-      <div class="offer-body">
-        <p class="offer-desc">Book directly through our website or by phone and automatically get our lowest rate — lower than anything listed on Booking.com, Expedia, or any OTA. No code needed.</p>
-        <div class="code-row"><div class="code">DIRECT</div><div class="code-label">Book online<br>or mention on call</div></div>
-      </div>
-    </div>
-    <div class="offer-card">
-      <div class="offer-hdr">
-        <div class="offer-tag">Extended Stay</div>
-        <div class="offer-name">Weekly Rate</div>
-      </div>
-      <div class="offer-body">
-        <p class="offer-desc">Staying 7+ nights? Call us directly for our weekly flat rate — significantly cheaper than nightly pricing. Perfect for traveling nurses, contractors, and work travelers in Lewisburg.</p>
-        <div class="code-row"><div class="code">WEEKLY</div><div class="code-label">Call to claim<br>(304) 645-6451</div></div>
-      </div>
-    </div>
-    <div class="offer-card">
-      <div class="offer-hdr">
-        <div class="offer-tag">Road Tripper</div>
-        <div class="offer-name">Road Trip Special</div>
-      </div>
-      <div class="offer-body">
-        <p class="offer-desc">Passing through West Virginia on a road trip? Call or WhatsApp us directly and mention this offer for a free early check-in when available, plus our guaranteed lowest nightly rate.</p>
-        <div class="code-row"><div class="code">ROADTRIP</div><div class="code-label">Call or WhatsApp<br>to redeem</div></div>
-      </div>
-    </div>
+    <div class="offer-card"><div class="offer-hdr"><div class="offer-tag">Best Seller</div><div class="offer-name">Direct Booking Rate</div></div><div class="offer-body"><p class="offer-desc">Book directly through our website or by phone and get our lowest rate automatically. No code needed.</p><div class="code-row"><div class="code">DIRECT</div><div class="code-label">Book online<br>or mention on call</div></div></div></div>
+    <div class="offer-card"><div class="offer-hdr"><div class="offer-tag">Extended Stay</div><div class="offer-name">Weekly Rate</div></div><div class="offer-body"><p class="offer-desc">Staying 7+ nights? Call us directly for our weekly flat rate — significantly cheaper than nightly pricing.</p><div class="code-row"><div class="code">WEEKLY</div><div class="code-label">Call to claim<br>(304) 645-6451</div></div></div></div>
+    <div class="offer-card"><div class="offer-hdr"><div class="offer-tag">Road Tripper</div><div class="offer-name">Road Trip Special</div></div><div class="offer-body"><p class="offer-desc">Passing through West Virginia? Call or WhatsApp and mention this offer for a free early check-in when available.</p><div class="code-row"><div class="code">ROADTRIP</div><div class="code-label">Call or WhatsApp<br>to redeem</div></div></div></div>
   </div>
 </section>
 
@@ -538,38 +450,13 @@ footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 2
   <div class="section-label">Common Questions</div>
   <h2>Quick Answers.</h2>
   <div class="faq-list">
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">What is included in the room rate?</div>
-      <div class="faq-a">All room rates include free WiFi and free parking. Rooms come with a flat-screen TV and air conditioning/heating. There are no resort fees or hidden charges — the rate you see is what you pay, plus applicable WV state tax.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">How close are you to downtown Lewisburg?</div>
-      <div class="faq-a">We're located at 187 W Fair St — approximately a 2-minute walk from historic downtown Lewisburg, the Greenbrier Valley Theatre, and local restaurants. It's one of the best locations in town for walkability.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">What are check-in and check-out times?</div>
-      <div class="faq-a">Check-in is at 3:00 PM. Check-out is at 10:00 AM. Early check-in or late check-out may be available — call us at (304) 645-6451 and we'll do our best to accommodate your schedule.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">Is parking free?</div>
-      <div class="faq-a">Yes — free on-site parking is available for all guests, every night. No daily parking fees, no garages. Park right outside your room door.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">Can I book by phone or WhatsApp?</div>
-      <div class="faq-a">Absolutely. Call us at (304) 645-6451 or WhatsApp us at the same number. Booking by phone or WhatsApp also qualifies for our best direct rate — often cheaper than any OTA listing.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">Do you allow pets?</div>
-      <div class="faq-a">Please call us at (304) 645-6451 to check current pet availability — we have a pet-friendly option available with a $20 pet fee per stay, subject to availability.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">What is your cancellation policy?</div>
-      <div class="faq-a">We offer free cancellation up to 24 hours before check-in. Late cancellations or no-shows may be charged for one night. For direct bookings, call us and we'll work with you if your plans change. <a href="/policies.html" style="color:var(--gold-dark);font-weight:600">Read full policies →</a></div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="toggleFaq(this)">Where can I read all hotel policies?</div>
-      <div class="faq-a">All our policies — deposit, smoking, pets, cancellation, and privacy — are on our dedicated policies page. <a href="/policies.html" style="color:var(--gold-dark);font-weight:600">Read full hotel policies →</a></div>
-    </div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is included in the room rate?</div><div class="faq-a">All room rates include free WiFi and free parking. Rooms come with a flat-screen TV and air conditioning/heating. No resort fees or hidden charges — the rate you see is what you pay, plus applicable WV state tax.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How close are you to downtown Lewisburg?</div><div class="faq-a">We're at 187 W Fair St — approximately a 2-minute walk from historic downtown Lewisburg, the Greenbrier Valley Theatre, and local restaurants.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What are check-in and check-out times?</div><div class="faq-a">Check-in is at 3:00 PM. Check-out is at 10:00 AM. Early check-in or late check-out may be available — call us at (304) 645-6451.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Is parking free?</div><div class="faq-a">Yes — free on-site parking is available for all guests, every night. No daily parking fees, no garages. Park right outside your room door.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can I book by phone or WhatsApp?</div><div class="faq-a">Absolutely. Call us at (304) 645-6451 or WhatsApp us at the same number. Booking by phone or WhatsApp also qualifies for our best direct rate.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you allow pets?</div><div class="faq-a">Please call us at (304) 645-6451 to check current pet availability — we have a pet-friendly option with a $20 pet fee per stay, subject to availability.</div></div>
+    <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is your cancellation policy?</div><div class="faq-a">We offer free cancellation up to 24 hours before check-in. Late cancellations or no-shows may be charged for one night. <a href="/motel-m-lewisburg-policies.html" style="color:var(--gold-dark);font-weight:600">Read full policies →</a></div></div>
   </div>
 </section>
 
@@ -577,19 +464,11 @@ footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 2
   <h2>Ready to Book?</h2>
   <p>The most affordable motel in Lewisburg — steps from downtown. Book direct in 2 minutes.</p>
   <div class="price-compare">
-    <div class="compare-box">
-      <div class="compare-label">OTA Price (King)</div>
-      <div class="compare-price old">~$70+</div>
-      <div class="compare-save">+ OTA fees &amp; taxes</div>
-    </div>
-    <div class="compare-box">
-      <div class="compare-label">Direct Price (King)</div>
-      <div class="compare-price">$55</div>
-      <div class="compare-save">+ tax only. No fees.</div>
-    </div>
+    <div class="compare-box"><div class="compare-label">OTA Price (King)</div><div class="compare-price old">~$70+</div><div class="compare-save">+ OTA fees &amp; taxes</div></div>
+    <div class="compare-box"><div class="compare-label">Direct Price (King)</div><div class="compare-price">$55</div><div class="compare-save">+ tax only. No fees.</div></div>
   </div>
   <div class="final-ctas">
-    <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=3ac4a879db094542ad034bb0efe1ef78&lang=en&Curr=1&Operation=date&txtcheckindate=04/08/2026&txtcheckoutdate=04/09/2026&txtadult=2&txtChildren=0&Source=Google" class="btn-primary" style="font-size:21px;padding:17px 34px">✓ Book Online — Best Rate</a>
+    <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=240ab04fc93849d295484c36996c5277&lang=en&Curr=1" class="btn-primary" style="font-size:21px;padding:17px 34px">✓ Book Online — Best Rate</a>
     <a href="tel:3046456451" class="btn-outline" style="font-size:20px;padding:16px 26px">📞 Call (304) 645-6451</a>
     <a href="https://wa.me/13046456451" class="btn-whatsapp" style="font-size:19px;padding:16px 24px">💬 WhatsApp Us</a>
   </div>
@@ -612,38 +491,24 @@ footer{background:var(--charcoal);color:rgba(255,255,255,0.62);padding:44px 5% 2
         <li><a href="#rooms">Room Types &amp; Rates</a></li>
         <li><a href="#location">Location &amp; Directions</a></li>
         <li><a href="#offers">Direct Booking Offers</a></li>
-        <li><a href="/policies.html">Hotel Policies</a></li>
-        <li><a href="/policies.html#privacy">Privacy Policy</a></li>
-        <li><a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=3ac4a879db094542ad034bb0efe1ef78&lang=en&Curr=1&Operation=date&txtcheckindate=04/08/2026&txtcheckoutdate=04/09/2026&txtadult=2&txtChildren=0&Source=Google">Book Now</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Near Lewisburg</div>
-      <ul class="footer-links">
-        <li><a href="#location">Hotel near downtown Lewisburg WV</a></li>
-        <li><a href="#location">Hotel near Greenbrier Valley Theatre</a></li>
-        <li><a href="#location">Hotel near State Fair of WV</a></li>
-        <li><a href="#location">Cheap motel Lewisburg WV</a></li>
+        <li><a href="/motel-m-lewisburg-policies.html">Hotel Policies</a></li>
+        <li><a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=240ab04fc93849d295484c36996c5277&lang=en&Curr=1">Book Now</a></li>
       </ul>
     </div>
     <div>
       <div class="footer-col-title">Address</div>
-      <p style="font-size:13px;line-height:1.9">187 W Fair St<br>Lewisburg, WV 24901<br><br>
-        Check-in: 3:00 PM<br>
-        Check-out: 10:00 AM<br><br>
-        <a href="https://maps.google.com/?q=187+W+Fair+St+Lewisburg+WV" style="color:var(--gold)" target="_blank">Get Directions →</a>
-      </p>
+      <p style="font-size:13px;line-height:1.9">187 W Fair St<br>Lewisburg, WV 24901<br><br>Check-in: 3:00 PM<br>Check-out: 10:00 AM<br><br><a href="https://maps.google.com/?q=187+W+Fair+St+Lewisburg+WV" style="color:var(--gold)" target="_blank">Get Directions →</a></p>
     </div>
   </div>
   <div class="footer-bottom">
     <span>© 2026 Motel M Lewisburg. All rights reserved.</span>
-    <span><a href="/policies.html" style="color:rgba(255,255,255,0.45)">Policies &amp; Privacy</a> · <a href="tel:3046456451" style="color:var(--gold)">(304) 645-6451</a></span>
+    <span><a href="/motel-m-lewisburg-policies.html" style="color:rgba(255,255,255,0.45)">Policies</a> · <a href="tel:3046456451" style="color:var(--gold)">(304) 645-6451</a></span>
   </div>
 </footer>
 
 <a href="https://wa.me/13046456451" class="wa-float" title="WhatsApp">💬</a>
 <div class="sticky-bar">
-  <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=3ac4a879db094542ad034bb0efe1ef78&lang=en&Curr=1&Operation=date&txtcheckindate=04/08/2026&txtcheckoutdate=04/09/2026&txtadult=2&txtChildren=0&Source=Google" class="sb-book">King $55 · Double $60 — Book Now</a>
+  <a href="https://reservation.asiwebres.com/v5/RoomAvailability.aspx?sid=240ab04fc93849d295484c36996c5277&lang=en&Curr=1" class="sb-book">King $55 · Double $60 — Book Now</a>
   <a href="tel:3046456451" class="sb-call">📞 Call</a>
 </div>
 
