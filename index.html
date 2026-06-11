@@ -299,7 +299,7 @@ footer{background:#141424;color:rgba(255,255,255,0.62);padding:44px 5% 24px}
 </div>
 
 <div class="hero">
-  <div class="hero-bg"><img src="images/king-room-main.jpg" alt="Motel M Lewisburg WV king room — affordable motel near downtown"></div>
+  <div class="hero-bg"><img src="images/exterior-main.jpg" alt="Motel M Lewisburg WV exterior — affordable motel near downtown"></div>
   <div class="hero-overlay"></div>
   <div class="hero-inner">
     <div class="hero-badge">★★★★ 4.1 · 389 Google Reviews · Lewisburg, WV</div>
@@ -341,11 +341,11 @@ footer{background:#141424;color:rgba(255,255,255,0.62);padding:44px 5% 24px}
   <h2>See Motel M Lewisburg.</h2>
   <p class="section-sub">Real photos of our actual rooms — no stock images, no filters. What you see is what you get.</p>
   <div class="photo-grid">
-    <img src="images/king-room-main.jpg" alt="King room Motel M Lewisburg WV — king bed with distinctive headboard">
-    <img src="images/bathroom.jpg" alt="Bathroom vanity Motel M Lewisburg">
-    <img src="images/king-room-amenities.jpg" alt="King room flat screen TV and dresser Motel M Lewisburg">
-    <img src="images/king-room-wide.jpg" alt="King room sitting area Motel M Lewisburg">
+    <img src="images/exterior-main.jpg" alt="Motel M Lewisburg WV exterior — two-story brick motel">
+    <img src="images/exterior-garden.jpg" alt="Motel M Lewisburg garden entrance">
+    <img src="images/king-room-main.jpg" alt="King room Motel M Lewisburg WV">
     <img src="images/double-room-main.jpg" alt="Double room two beds Motel M Lewisburg WV">
+    <img src="images/king-room-amenities.jpg" alt="King room flat screen TV and dresser Motel M Lewisburg">
   </div>
 </section>
 
@@ -387,9 +387,13 @@ footer{background:#141424;color:rgba(255,255,255,0.62);padding:44px 5% 24px}
   <div class="rooms-grid">
 
     <div class="room-card">
-      <div class="room-photos">
-        <img src="images/king-room-main.jpg" alt="King room Motel M Lewisburg WV — king bed blue accent wall">
+      <div class="room-photos" id="king-slider" style="position:relative;height:220px;overflow:hidden;cursor:pointer;" onclick="openLightbox('king',0)">
+        <img id="king-img" src="images/king-room-main.jpg" alt="King room Motel M Lewisburg WV — king bed blue accent wall" style="width:100%;height:100%;object-fit:cover;transition:opacity .3s">
         <div class="room-badge">Most Popular</div>
+        <button onclick="event.stopPropagation();slideRoom('king',-1)" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.55);color:#fff;border:none;border-radius:50%;width:32px;height:32px;font-size:18px;cursor:pointer;line-height:1;z-index:2;">&#8249;</button>
+        <button onclick="event.stopPropagation();slideRoom('king',1)" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.55);color:#fff;border:none;border-radius:50%;width:32px;height:32px;font-size:18px;cursor:pointer;line-height:1;z-index:2;">&#8250;</button>
+        <div id="king-dots" style="position:absolute;bottom:8px;left:50%;transform:translateX(-50%);display:flex;gap:5px;z-index:2;"></div>
+        <div style="position:absolute;bottom:8px;right:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:11px;padding:2px 7px;border-radius:10px;z-index:2;">Tap to view</div>
       </div>
       <div class="room-body">
         <div class="room-type">King Bed · 1 Guest or Couple</div>
@@ -409,9 +413,13 @@ footer{background:#141424;color:rgba(255,255,255,0.62);padding:44px 5% 24px}
     </div>
 
     <div class="room-card">
-      <div class="room-photos">
-        <img src="images/double-room-main.jpg" alt="Double room two beds Motel M Lewisburg WV">
+      <div class="room-photos" id="double-slider" style="position:relative;height:220px;overflow:hidden;cursor:pointer;" onclick="openLightbox('double',0)">
+        <img id="double-img" src="images/double-room-main.jpg" alt="Double room two beds Motel M Lewisburg WV" style="width:100%;height:100%;object-fit:cover;transition:opacity .3s">
         <div class="room-badge" style="background:var(--navy);color:var(--gold)">Best Value</div>
+        <button onclick="event.stopPropagation();slideRoom('double',-1)" style="position:absolute;left:8px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.55);color:#fff;border:none;border-radius:50%;width:32px;height:32px;font-size:18px;cursor:pointer;line-height:1;z-index:2;">&#8249;</button>
+        <button onclick="event.stopPropagation();slideRoom('double',1)" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.55);color:#fff;border:none;border-radius:50%;width:32px;height:32px;font-size:18px;cursor:pointer;line-height:1;z-index:2;">&#8250;</button>
+        <div id="double-dots" style="position:absolute;bottom:8px;left:50%;transform:translateX(-50%);display:flex;gap:5px;z-index:2;"></div>
+        <div style="position:absolute;bottom:8px;right:10px;background:rgba(0,0,0,0.5);color:#fff;font-size:11px;padding:2px 7px;border-radius:10px;z-index:2;">Tap to view</div>
       </div>
       <div class="room-body">
         <div class="room-type">Two Beds · Families &amp; Groups</div>
@@ -437,14 +445,14 @@ footer{background:#141424;color:rgba(255,255,255,0.62);padding:44px 5% 24px}
   <div class="section-label">Photo Gallery</div>
   <h2 style="color:var(--white)">Inside Our Rooms.</h2>
   <div class="photo-row">
-    <img src="images/king-room-main.jpg"        alt="King room blue wall Motel M Lewisburg">
-    <img src="images/double-tv.jpg"        alt="Double room with TV Motel M Lewisburg">
-    <img src="images/double-sunlit.jpg"    alt="Double room sunlit Motel M Lewisburg">
-    <img src="images/double-headboard.jpg" alt="Double room headboard Motel M Lewisburg">
-    <img src="images/double-warm.jpg"      alt="Double room warm Motel M Lewisburg">
-    <img src="images/exterior-main.jpg"    alt="Motel M Lewisburg exterior sign">
-    <img src="images/king-dark.jpg"        alt="King room Motel M Lewisburg">
-    <img src="images/exterior-garden.jpg"  alt="Motel M Lewisburg garden">
+    <img src="images/king-room-main.jpg"      alt="King room Motel M Lewisburg" onclick="openLightbox('king',0)" style="cursor:pointer">
+    <img src="images/king-blue.jpg"           alt="King room blue wall Motel M Lewisburg" onclick="openLightbox('king',1)" style="cursor:pointer">
+    <img src="images/king-room-wide.jpg"      alt="King room wide view Motel M Lewisburg" onclick="openLightbox('king',2)" style="cursor:pointer">
+    <img src="images/king-room-chairs.jpg"    alt="King room chairs Motel M Lewisburg" onclick="openLightbox('king',3)" style="cursor:pointer">
+    <img src="images/double-room-main.jpg"    alt="Double room Motel M Lewisburg" onclick="openLightbox('double',0)" style="cursor:pointer">
+    <img src="images/double-warm.jpg"         alt="Double room warm Motel M Lewisburg" onclick="openLightbox('double',1)" style="cursor:pointer">
+    <img src="images/exterior-main.jpg"       alt="Motel M Lewisburg exterior sign">
+    <img src="images/exterior-garden.jpg"     alt="Motel M Lewisburg garden">
   </div>
 </div>
 
@@ -753,9 +761,135 @@ document.getElementById("sms-full-form").addEventListener("submit", function(e) 
   <a href="tel:3046456451" class="sb-call">📞 Call</a>
 </div>
 
+
+<!-- Room photo sliders + lightbox -->
 <script>
 function toggleFaq(el){el.classList.toggle('open');el.nextElementSibling.classList.toggle('open')}
 window.addEventListener('scroll',()=>{document.querySelector('nav').style.boxShadow=window.scrollY>20?'0 2px 24px rgba(0,0,0,0.45)':'none'})
+const ROOMS = {
+  king: {
+    imgs: [
+      {src:'images/king-room-main.jpg', alt:'King room – main view'},
+      {src:'images/king-blue.jpg',      alt:'King room – blue accent'},
+      {src:'images/king-room-wide.jpg', alt:'King room – wide angle'},
+      {src:'images/king-dark.jpg',      alt:'King room – evening mood'},
+      {src:'images/king-room-chairs.jpg',alt:'King room – seating area'},
+      {src:'images/king-room-amenities.jpg',alt:'King room – TV & dresser'},
+      {src:'images/king-room-tv.jpg',   alt:'King room – flat screen TV'},
+    ],
+    idx: 0
+  },
+  double: {
+    imgs: [
+      {src:'images/double-room-main.jpg',  alt:'Double room – main view'},
+      {src:'images/double-room-alt.jpg',   alt:'Double room – alternate angle'},
+      {src:'images/double-warm.jpg',       alt:'Double room – warm lighting'},
+      {src:'images/double-sunlit.jpg',     alt:'Double room – sunlit'},
+      {src:'images/double-tv.jpg',         alt:'Double room – TV view'},
+      {src:'images/double-wide.jpg',       alt:'Double room – wide angle'},
+    ],
+    idx: 0
+  }
+};
+
+function renderDots(room){
+  const d=document.getElementById(room+'-dots');
+  if(!d)return;
+  d.innerHTML='';
+  ROOMS[room].imgs.forEach((_,i)=>{
+    const s=document.createElement('span');
+    s.style.cssText=`width:7px;height:7px;border-radius:50%;background:${i===ROOMS[room].idx?'#ffc107':'rgba(255,255,255,0.55)'}`;
+    d.appendChild(s);
+  });
+}
+
+function slideRoom(room,dir){
+  const R=ROOMS[room];
+  R.idx=(R.idx+dir+R.imgs.length)%R.imgs.length;
+  const el=document.getElementById(room+'-img');
+  el.style.opacity='0';
+  setTimeout(()=>{
+    el.src=R.imgs[R.idx].src;
+    el.alt=R.imgs[R.idx].alt;
+    el.style.opacity='1';
+  },150);
+  renderDots(room);
+}
+
+// init dots
+renderDots('king');
+renderDots('double');
+
+// ── Lightbox ──────────────────────────────────────
+const lb=document.createElement('div');
+lb.id='lb';
+lb.style.cssText='display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.93);display:none;align-items:center;justify-content:center;flex-direction:column;';
+lb.innerHTML=`
+  <button id="lb-close" style="position:absolute;top:16px;right:20px;background:none;border:none;color:#fff;font-size:32px;cursor:pointer;z-index:2;">✕</button>
+  <button id="lb-prev" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.15);border:none;color:#fff;font-size:36px;width:48px;height:48px;border-radius:50%;cursor:pointer;">&#8249;</button>
+  <img id="lb-img" src="" alt="" style="max-width:92vw;max-height:82vh;border-radius:8px;object-fit:contain;box-shadow:0 8px 40px rgba(0,0,0,0.7)">
+  <div id="lb-caption" style="color:rgba(255,255,255,0.7);font-size:14px;margin-top:12px;text-align:center;"></div>
+  <div id="lb-dots" style="display:flex;gap:6px;margin-top:10px;"></div>
+  <button id="lb-next" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.15);border:none;color:#fff;font-size:36px;width:48px;height:48px;border-radius:50%;cursor:pointer;">&#8250;</button>
+`;
+document.body.appendChild(lb);
+
+let lbRoom='',lbIdx=0;
+
+function updateLb(){
+  const R=ROOMS[lbRoom];
+  document.getElementById('lb-img').src=R.imgs[lbIdx].src;
+  document.getElementById('lb-img').alt=R.imgs[lbIdx].alt;
+  document.getElementById('lb-caption').textContent=R.imgs[lbIdx].alt+' ('+(lbIdx+1)+'/'+R.imgs.length+')';
+  const dots=document.getElementById('lb-dots');
+  dots.innerHTML='';
+  R.imgs.forEach((_,i)=>{
+    const s=document.createElement('span');
+    s.style.cssText=`width:8px;height:8px;border-radius:50%;background:${i===lbIdx?'#ffc107':'rgba(255,255,255,0.4)'}`;
+    dots.appendChild(s);
+  });
+}
+
+function openLightbox(room,idx){
+  lbRoom=room; lbIdx=idx;
+  lb.style.display='flex';
+  document.body.style.overflow='hidden';
+  updateLb();
+}
+
+document.getElementById('lb-close').onclick=()=>{lb.style.display='none';document.body.style.overflow='';};
+document.getElementById('lb-prev').onclick=()=>{const R=ROOMS[lbRoom];lbIdx=(lbIdx-1+R.imgs.length)%R.imgs.length;updateLb();};
+document.getElementById('lb-next').onclick=()=>{const R=ROOMS[lbRoom];lbIdx=(lbIdx+1)%R.imgs.length;updateLb();};
+lb.addEventListener('click',e=>{if(e.target===lb){lb.style.display='none';document.body.style.overflow='';}});
+document.addEventListener('keydown',e=>{
+  if(lb.style.display==='flex'){
+    if(e.key==='ArrowLeft')document.getElementById('lb-prev').click();
+    if(e.key==='ArrowRight')document.getElementById('lb-next').click();
+    if(e.key==='Escape')document.getElementById('lb-close').click();
+  }
+});
+
+// touch swipe for lightbox
+let lbTx=0;
+lb.addEventListener('touchstart',e=>{lbTx=e.touches[0].clientX;},{passive:true});
+lb.addEventListener('touchend',e=>{
+  const dx=lbTx-e.changedTouches[0].clientX;
+  if(Math.abs(dx)>40){dx>0?document.getElementById('lb-next').click():document.getElementById('lb-prev').click();}
+});
+
+// touch swipe for room sliders
+['king','double'].forEach(room=>{
+  const el=document.getElementById(room+'-slider');
+  if(!el)return;
+  let tx=0;
+  el.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;},{passive:true});
+  el.addEventListener('touchend',e=>{
+    const dx=tx-e.changedTouches[0].clientX;
+    if(Math.abs(dx)>30){slideRoom(room,dx>0?1:-1);}
+  });
+});
 </script>
+
+
 </body>
 </html>
