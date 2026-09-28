@@ -12,7 +12,7 @@
   "@context": "https://schema.org",
   "@type": "LodgingBusiness",
   "name": "Motel M Lewisburg",
-  "url": "https://motellewisburg.com",
+  "url": "https://motelmlewisburg.com",
   "telephone": "+13046456451",
   "address": {
     "@type": "PostalAddress",
@@ -632,8 +632,8 @@ footer{background:#141424;color:rgba(255,255,255,0.62);padding:44px 5% 24px}
               • Messaging frequency may vary.<br>
               • Message and data rates may apply.<br>
               • You can opt out any time by texting <strong>STOP</strong>.<br>
-              • For assistance, text <strong>HELP</strong> or visit <a href="https://motellewisburg.com/" style="color:#4285F4;">motellewisburg.com</a>.<br>
-              • Visit <a href="https://motellewisburg.com/motel-m-lewisburg-policies.html" style="color:#4285F4;">motellewisburg.com/motel-m-lewisburg-policies.html</a> for our Privacy Policy and Terms of Service.<br>
+              • For assistance, text <strong>HELP</strong> or visit <a href="https://motelmlewisburg.com/" style="color:#4285F4;">motelmlewisburg.com</a>.<br>
+              • Visit <a href="https://motelmlewisburg.com/motel-m-lewisburg-policies.html" style="color:#4285F4;">motelmlewisburg.com/motel-m-lewisburg-policies.html</a> for our Privacy Policy and Terms of Service.<br>
               • We will never sell or share your phone number with third parties for SMS purposes.
             </span>
           </span>
@@ -649,8 +649,8 @@ footer{background:#141424;color:rgba(255,255,255,0.62);padding:44px 5% 24px}
  
       <p style="font-size:11px;color:#888;text-align:center;margin-top:12px;">
         Consent is not a condition of any purchase.
-        <a href="https://motellewisburg.com/motel-m-lewisburg-policies.html" style="color:#4285F4;">Privacy Policy</a> ·
-        <a href="https://motellewisburg.com/motel-m-lewisburg-policies.html" style="color:#4285F4;">Terms of Service</a>
+        <a href="https://motelmlewisburg.com/motel-m-lewisburg-policies.html" style="color:#4285F4;">Privacy Policy</a> ·
+        <a href="https://motelmlewisburg.com/motel-m-lewisburg-policies.html" style="color:#4285F4;">Terms of Service</a>
       </p>
     </form>
  
@@ -664,7 +664,7 @@ footer{background:#141424;color:rgba(255,255,255,0.62);padding:44px 5% 24px}
  
 <!-- ═══════════════════════════════════════════════════════
      GOOGLE SHEETS INTEGRATION via Cloudflare Worker
-     Same worker as Morgantown Motel — routes to Apps Script
+     Shared Cloudflare Worker — routes to Apps Script
      Sheet: "MTM LEAD FORMS" — add Source column to identify property
      ═══════════════════════════════════════════════════════ -->
 <iframe name="hidden-sink" style="display:none;"></iframe>
@@ -759,7 +759,7 @@ document.getElementById("sms-full-form").addEventListener("submit", function(e) 
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 Motel M Lewisburg. All rights reserved.</span>
+    <span>© <span class="js-year">2026</span> Motel M Lewisburg. All rights reserved.</span>
     <span><a href="/motel-m-lewisburg-policies.html" style="color:rgba(255,255,255,0.45)">Policies</a> · <a href="/motel-m-lewisburg-policies.html#sms-terms" style="color:rgba(255,255,255,0.45)">SMS Terms</a> · <a href="tel:3046456451" style="color:var(--gold)">(304) 645-6451</a></span>
   </div>
 </footer>
@@ -900,5 +900,6 @@ lb.addEventListener('touchend',e=>{
 </script>
  
  
+<script>document.querySelectorAll(".js-year").forEach(function(el){el.textContent=new Date().getFullYear();});</script>
 </body>
 </html>
