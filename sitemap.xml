@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://motelmlewisburg.com/</loc>
-    <lastmod>2026-04-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-01</lastmod>
+    <image:image><image:loc>https://motelmlewisburg.com/images/exterior-main.jpg</image:loc></image:image>
+    <image:image><image:loc>https://motelmlewisburg.com/images/exterior-garden.jpg</image:loc></image:image>
+    <image:image><image:loc>https://motelmlewisburg.com/images/king-room-main.jpg</image:loc></image:image>
+    <image:image><image:loc>https://motelmlewisburg.com/images/double-room-main.jpg</image:loc></image:image>
+    <image:image><image:loc>https://motelmlewisburg.com/images/king-room-amenities.jpg</image:loc></image:image>
+    <image:image><image:loc>https://motelmlewisburg.com/images/king-room-wide.jpg</image:loc></image:image>
   </url>
- 
   <url>
     <loc>https://motelmlewisburg.com/motel-m-lewisburg-policies.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2026-10-01</lastmod>
   </url>
- 
 </urlset>
- 
